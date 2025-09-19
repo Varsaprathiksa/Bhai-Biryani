@@ -1,0 +1,374 @@
+*{box-sizing: border-box;}
+#userProfile{
+    width: 90%;
+    background-color: #FFC107;
+    border-radius: 15px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+}
+#usrProf-img{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+}
+#usrnmNprof{
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+    font-family: 'Poppins';
+}
+.userProfile > div > a {
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+}
+.userProfile > div > a > i {margin-top: 0; margin-left: 3px;}
+.search-div{
+    position: relative;
+    height: fit-content;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#searchInput {
+    border: none;
+    border-radius: 10px;
+  padding: 10px 60px;
+  width: 400px;
+}
+#searchInput::placeholder {
+    color: grey;
+    font-weight: bold;
+}
+#searchBtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 30px;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 10px;
+    border: none;
+    background: transparent;
+}
+#searchResult {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.search-img{
+    width: 100%;
+}
+#outletContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.outletCard{
+    background: #A10E0F;
+    color: #FFFFFF;
+    padding: 30px 45px;
+    border-radius: 25px;
+    display: flex;
+}
+.outletCard > .flex1{
+    display: flex;
+    align-self: center;
+    margin-right: 20px;
+}
+.outletCard > .flex1 > img{
+    width: 70px;
+    height: 65px;
+}
+.outletCard > .flex1 > div{
+    margin: 5px;
+}
+.outletCard > .flex1 > div > span{
+    color: #FFFFFF;
+    display: block;
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 1.4rem;
+}
+.outletCard > .flex2 > h5, .outletCard > .flex2 > p{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-style: bold;
+}
+.outletCard > .flex2 > button{
+    margin-top: 10px;
+    background: #FFC107;
+    border-radius: 35px;
+    text-align: center;
+    border: none;
+    padding: 8px 15px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-style: bold;
+    font-size: 1.1rem;
+}
+.outletCard > .flex2 > h5.highlight {
+    color: #FFC107;
+}
+/* RESERVE TABLE */
+
+.reserve-table-wrapped{
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px;
+}
+#legend {
+    margin-top: 50px;
+  margin-bottom: 10px;
+    color: #FFFFFF;
+  font-size: 2rem;
+}
+.legend {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.legend.available { background-color: #9BEEB7; }
+.legend.booked { background-color: #EF6661; }
+.legend.selected { background-color: orange; }
+.table {
+  margin: 20px;
+  padding: 20px;
+  padding-top: 50px;
+  background-color: #9BEEB7;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  /* width: 125px; */
+  /* height: 125px; */
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.round-table > .table{
+    border-radius: 50%;
+}
+.table.booked {
+  background-color: #EF6661;
+}
+/* .table.booked > .seat{
+   background-color: #EF6661; 
+} */
+.seat {
+  /* position: absolute; */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  /* background-color: #9BEEB7; */
+  background-color:	#333333;
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+.table.selected {
+  background-color: orange;
+}
+.seat.selected {
+  background-color: orange;
+}
+.seat.table.booked {
+  background-color: red;
+}
+
+.table-label {
+  margin-top: 10px;
+  font-weight: bold;
+  display: block;
+}
+.table-container{
+    /* display: inline-block; */
+    display: flex;
+}
+.square-table{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#paymentSection {
+  margin-top: 30px;
+  margin-right: 20px;
+  background-color: #D9D9D9;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 700px;
+  /* height: fit-content; */
+}
+.inside-payment{
+    background-color:#FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+#confirmBtn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #FFC107;
+    padding: 15px 35px;
+    color: black;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+#payBtn{
+    border: none;
+    background-color: #FFC107;
+    padding: 10px 15px;
+    color: black;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    display: flex;
+    justify-self: center;
+}
+.paymement-flex-wrapped{
+    display: flex;
+    justify-content: space-between;
+    /* align-self: flex-start; */
+    /* justify-self: ; */
+}
+.paymement-flex1{
+    display: flex;
+    align-self: flex-start;
+    margin-right: 20px;
+}
+.paymement-flex1 > img{
+    width: 80px;
+    height: 75px;
+}
+.paymement-flex1 > div{
+    margin: 5px;
+}
+.paymement-flex1 > div > span{
+    color: black;
+    display: block;
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-style: bold;
+    font-size: 1.4rem;
+}
+
+/* MEDIA SCREEN */
+
+@media screen and (min-width:801px)  and (max-width:1300px){
+        #outletContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+        .reserve-table-wrapped{
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px;
+}
+#paymentSection {
+  width: 100%;
+}
+.square-table{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.table {
+  margin: 10px;
+}
+
+}
+
+@media screen and (min-width:581px)  and (max-width:800px){
+    #outletContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+    .reserve-table-wrapped{
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px;
+}
+#paymentSection {
+  width: 100%;
+}
+.table-container{
+    /* display: inline-block; */
+    display: block;
+}
+.square-table, .round-table{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.table {
+  margin: 5px;
+}
+
+}
+
+@media screen and (max-width:580px){
+
+    #searchInput {
+    border: none;
+    border-radius: 10px;
+  padding: 10px 60px;
+  width: 300px;
+  margin-left: 10px;
+}
+    #outletContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    /* display: flex;
+    flex-direction: column; */
+}
+.outletCard{
+    background: #A10E0F;
+    color: #FFFFFF;
+    padding: 30px 10px;
+    border-radius: 25px;
+    display: flex;
+}
+
+    .reserve-table-wrapped{
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px;
+}
+#paymentSection {
+  width: 100%;
+}
+.table-container{
+    /* display: inline-block; */
+    display: block;
+}
+.square-table, .round-table{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.table {
+  margin: 5px;
+}
+
+}
